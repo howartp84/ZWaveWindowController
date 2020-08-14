@@ -516,7 +516,7 @@ class Plugin(indigo.PluginBase):
 
 		indigoDev = indigo.devices[int(selfDev)]
 
-		cmdClass = int(pluginAction.cmdClass)
+		cmdClass = int(pluginAction.props["cmdClass"])
 
 		if (cmdClass == 26): #COMMAND_CLASS_SWITCH_MULTILEVEL
 			codeStr = [38, 4, 96, 0]
@@ -534,7 +534,7 @@ class Plugin(indigo.PluginBase):
 
 		indigoDev = indigo.devices[int(selfDev)]
 
-		cmdClass = int(pluginAction.cmdClass)
+		cmdClass = int(pluginAction.props["cmdClass"])
 
 		if (cmdClass == 26): #COMMAND_CLASS_SWITCH_MULTILEVEL
 			codeStr = [38, 4, 32, 0]
@@ -552,7 +552,7 @@ class Plugin(indigo.PluginBase):
 
 		indigoDev = indigo.devices[int(selfDev)]
 
-		cmdClass = int(pluginAction.cmdClass)
+		cmdClass = int(pluginAction.props["cmdClass"])
 
 		if (cmdClass == 26): #COMMAND_CLASS_SWITCH_MULTILEVEL
 			codeStr = [38, 1, 99]
@@ -569,7 +569,7 @@ class Plugin(indigo.PluginBase):
 
 		indigoDev = indigo.devices[int(selfDev)]
 
-		cmdClass = int(pluginAction.cmdClass)
+		cmdClass = int(pluginAction.props["cmdClass"])
 
 		if (cmdClass == 26): #COMMAND_CLASS_SWITCH_MULTILEVEL
 			codeStr = [38, 1, 0]
@@ -586,7 +586,7 @@ class Plugin(indigo.PluginBase):
 
 		indigoDev = indigo.devices[int(selfDev)]
 
-		cmdClass = int(pluginAction.cmdClass)
+		cmdClass = int(pluginAction.props["cmdClass"])
 
 		if (cmdClass == 26): #COMMAND_CLASS_SWITCH_MULTILEVEL
 			codeStr = [38, 1, 255]
@@ -603,7 +603,7 @@ class Plugin(indigo.PluginBase):
 
 		indigoDev = indigo.devices[int(selfDev)]
 
-		cmdClass = int(pluginAction.cmdClass)
+		cmdClass = int(pluginAction.props["cmdClass"])
 
 		position = int(pluginAction.position)
 
@@ -623,7 +623,7 @@ def cmdStop(self,pluginAction):
 
 		indigoDev = indigo.devices[int(selfDev)]
 
-		cmdClass = int(pluginAction.cmdClass)
+		cmdClass = int(pluginAction.props["cmdClass"])
 
 		if (cmdClass == 26): #COMMAND_CLASS_SWITCH_MULTILEVEL
 			codeStr = [38, 5]

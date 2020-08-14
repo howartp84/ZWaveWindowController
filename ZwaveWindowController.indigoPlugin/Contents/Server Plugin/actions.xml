@@ -8,8 +8,8 @@
 				<Label>Commands:</Label>
 				<List>
 					<Option value="26">Switch Multilevel (default)</Option>
-					<Option value="20">Basic</Option>
-					<!--<Option value="3">3</Option>
+					<!--<Option value="20">Basic</Option>
+					<Option value="3">3</Option>
 					<Option value="4">4</Option>
 					<Option value="5">5</Option>
 					<Option value="6">6</Option>
@@ -30,8 +30,8 @@
 				<Label>Commands:</Label>
 				<List>
 					<Option value="26">Switch Multilevel (default)</Option>
-					<Option value="20">Basic</Option>
-					<!--<Option value="3">3</Option>
+					<!--<Option value="20">Basic</Option>
+					<Option value="3">3</Option>
 					<Option value="4">4</Option>
 					<Option value="5">5</Option>
 					<Option value="6">6</Option>
