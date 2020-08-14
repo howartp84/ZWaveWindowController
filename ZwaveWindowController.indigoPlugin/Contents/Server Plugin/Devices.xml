@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<Devices>
+	<!-- This custom device illustrates how a plugin can update custom device
+	states which can be used in Device State Changed triggers, conditionals,
+	and inspected on Control Pages. The python runConcurrentThread() method
+	will update the states every second.
+	-->
+	<Device type="custom" id="winController">
+		<Name>Window Controller</Name>
+		<ConfigUI>
+			<Field id="deviceId" type="menu">
+				<Label>ZWave device:</Label>
+				<List class="indigo.devices" filter="indigo.zwave"/>
+			</Field>
+		</ConfigUI>
+		<States>
+			<State id="lastCmd">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Last Command</TriggerLabel>
+				<ControlPageLabel>Last Command</ControlPageLabel>
+			</State>
+			<State id="currentPosition">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Current Position</TriggerLabel>
+				<ControlPageLabel>Current Position</ControlPageLabel>
+			</State>
+		</States>
+		<UiDisplayStateId>lastCommand</UiDisplayStateId>
+	</Device>
+
+</Devices>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<Actions>
+	<Action id="cmdRaise" deviceFilter="self">
+		<Name>Open</Name>
+		<CallbackMethod>cmdOpen</CallbackMethod>
+		<ConfigUI>
+			<Field id="cmdClass" type="menu" defaultValue="26">
+				<Label>Commands:</Label>
+				<List>
+					<Option value="26">Switch Multilevel (default)</Option>
+					<Option value="20">Basic</Option>
+					<!--<Option value="3">3</Option>
+					<Option value="4">4</Option>
+					<Option value="5">5</Option>
+					<Option value="6">6</Option>
+					<Option value="7">7</Option>
+					<Option value="8">8</Option>
+					<Option value="9">9</Option>
+					<Option value="10">10</Option>-->
+				</List>
+			</Field>
+		</ConfigUI>
+	</Action>
+
+	<Action id="cmdClose" deviceFilter="self">
+		<Name>Close</Name>
+		<CallbackMethod>cmdClose</CallbackMethod>
+		<ConfigUI>
+			<Field id="cmdClass" type="menu" defaultValue="26">
+				<Label>Commands:</Label>
+				<List>
+					<Option value="26">Switch Multilevel (default)</Option>
+					<Option value="20">Basic</Option>
+					<!--<Option value="3">3</Option>
+					<Option value="4">4</Option>
+					<Option value="5">5</Option>
+					<Option value="6">6</Option>
+					<Option value="7">7</Option>
+					<Option value="8">8</Option>
+					<Option value="9">9</Option>
+					<Option value="10">10</Option>-->
+				</List>
+			</Field>
+		</ConfigUI>
+	</Action>
+
+	<Action id="cmdStop" deviceFilter="self">
+		<Name>Stop</Name>
+		<CallbackMethod>cmdStop</CallbackMethod>
+		<ConfigUI>
+			<Field id="cmdClass" type="menu" defaultValue="26">
+				<Label>Method:</Label>
+				<List>
+					<Option value="26">Switch Multilevel (default)</Option>
+					<!--<Option value="2">2</Option>
+					<Option value="3">3</Option>
+					<Option value="4">4</Option>
+					<Option value="5">5</Option>
+					<Option value="6">6</Option>
+					<Option value="7">7</Option>
+					<Option value="8">8</Option>
+					<Option value="9">9</Option>
+					<Option value="10">10</Option>-->
+				</List>
+			</Field>
+		</ConfigUI>
+	</Action>
+
+	<Action id="cmdPrevious" deviceFilter="self">
+		<Name>Return to previous position</Name>
+		<CallbackMethod>cmdPrevious</CallbackMethod>
+		<ConfigUI>
+			<Field id="cmdClass" type="menu" defaultValue="26">
+				<Label>Method:
+
+					Most window/blind/shade devices support "Switch Multilevel" commands.
+					There is a newer "Window Control" command set which I will be adding.</Label>
+				<List>
+					<Option value="26">Switch Multilevel (default)</Option>
+					<!--<Option value="2">2</Option>
+					<Option value="3">3</Option>
+					<Option value="4">4</Option>
+					<Option value="5">5</Option>
+					<Option value="6">6</Option>
+					<Option value="7">7</Option>
+					<Option value="8">8</Option>
+					<Option value="9">9</Option>
+					<Option value="10">10</Option>-->
+				</List>
+			</Field>
+		</ConfigUI>
+	</Action>
+
+	<Action id="cmdPosition" deviceFilter="self">
+		<Name>Go to position</Name>
+		<CallbackMethod>cmdPosition</CallbackMethod>
+		<ConfigUI>
+			<Field id="cmdClass" type="menu" defaultValue="26">
+				<Label>Method:
+
+					Most window/blind/shade devices support "Switch Multilevel" commands.
+					There is a newer "Window Control" command set which I will be adding.</Label>
+				<List>
+					<Option value="26">Switch Multilevel (default)</Option>
+					<!--<Option value="2">2</Option>
+					<Option value="3">3</Option>
+					<Option value="4">4</Option>
+					<Option value="5">5</Option>
+					<Option value="6">6</Option>
+					<Option value="7">7</Option>
+					<Option value="8">8</Option>
+					<Option value="9">9</Option>
+					<Option value="10">10</Option>-->
+				</List>
+			</Field>
+			<Field id="position" type="textfield" defaultValue="50">
+				<Label>Position (if supported):
+
+					Enter a percentage value between 1 and 99.</Label>
+			</Field>
+		</ConfigUI>
+	</Action>
+
+
+</Actions>
+
+
