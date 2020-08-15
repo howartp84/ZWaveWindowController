@@ -616,7 +616,7 @@ class Plugin(indigo.PluginBase):
 			indigo.zwave.sendRaw(device=indigoDev,cmdBytes=codeStr,sendMode=1)
 
 
-def cmdStop(self,pluginAction):
+	def cmdStop(self,pluginAction):
 		self.debugLog("cmdStop called")
 
 		selfDev = indigo.devices[int(pluginAction.deviceId)].ownerProps['deviceId']
