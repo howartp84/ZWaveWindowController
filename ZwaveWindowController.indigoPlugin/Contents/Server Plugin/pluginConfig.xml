@@ -4,10 +4,5 @@
 		<Label>Enable debugging:</Label>
 	</Field>
 
-	<!--
-	<Field id="sceneDevID" type="menu">
-		<Label>Scene Controller:</Label>
-		<List class="indigo.devices" filter="indigo.zwave"/>
-	</Field>
-	-->
+
 </PluginConfig>
