@@ -47,6 +47,7 @@ class Plugin(indigo.PluginBase):
 	########################################
 	def startup(self):
 		self.debugLog(u"startup called -- subscribing to all incoming Z-Wave commands")
+		self.debugLog("Plugin version: {}".format(self.version))
 		#indigo.zwave.subscribeToIncoming()
 
 	def shutdown(self):
@@ -60,7 +61,7 @@ class Plugin(indigo.PluginBase):
 			self.debug = valuesDict.get("showDebugInfo", False)
 			#self.sceneDevID = valuesDict.get("sceneDevID", 200)
 			#self.sceneDevNode = indigo.devices[int(self.sceneDevID)].ownerProps['address']
-			#indigo.server.log("Scene Device: %s" % indigo.devices[int(self.sceneDevID)].name)
+			#indigo.server.log("Scene Device: {}".format(indigo.devices[int(self.sceneDevID)].name))
 			if self.debug:
 				indigo.server.log("Debug logging enabled")
 			else:
@@ -107,8 +108,8 @@ class Plugin(indigo.PluginBase):
 		for dev in indigo.devices.iter("self"):
 			dNode = indigo.devices[int(dev.ownerProps['deviceId'])].ownerProps['address']
 			if (int(dNode) == int(inNode)):
-				self.debugLog(u"Updating device %s with button %s" % (dev.name,inButton))
-				dev.updateStateOnServer("currentScene", "Scene %s" % (inButton))
+				self.debugLog(u"Updating device {} with button {}".format(dev.name,inButton))
+				dev.updateStateOnServer("currentScene", "Scene {}".format(inButton))
 
 	def cmdRaise(self,pluginAction):
 		self.debugLog("cmdRaise called")
